@@ -71,3 +71,63 @@ The concepts of chip floor planning considerations, Binding the library to the d
 * Placement of the logic
 * optimise the placement by inserting repeater
 
+
+## Design and Charecterisation of Library cells
+### Intro to Library Standard Cells
+* Standard Cells in the library can be ANDGate, Or gate, Buffer, DFF etc.
+* Each cell have different functionality
+* cells with same functionality can have varied sizes.
+* cells with same functionality can have varied switching thresholds, rise and fall delys etc.
+### Cell design flow
+* Inputs
+  * Process design Kits
+  * DRC LVS rules of tech node
+  * SPICE models
+  * Library and User defined Specs like cell-height, supply voltage, metal layers, pin location, gate length
+* Design Steps
+  * Circuit design - Transitor based implementation of the required functionality
+  * Layout Design - stick diagrams
+  * Charecterisation
+* Outputs
+  * Circuit Description Language
+  * GDSII
+  * Extracted Spice netlist
+  * Timing, noise etc.
+### Flow of Charecterisation 
+ * Model Libraries
+ * Spice model
+ * circuit model
+ * Power Supply
+ * Input Stimulus
+ * Output Capacitance
+ * Define the required Charecterisation (DC/ Transient).
+### Timing Charecterisation
+ * Timing Threshold Definition
+    * slew Rise,fall
+    * IN Rise ,fall
+    * OUT Rise,fall 
+ * Propagation Delay
+ * Transition Time
+ 
+### SPICE Simulations
+* SPICE Deck
+* NGSPICE commands for simulation of spice definitions of the circuits
+* Evaluation of Static and Dynamic behavior of CMOS INverter
+### Art of Layout - Euler's path and stick diagrams
+* Importance of ordering of inputs i.e., poly bars in the layout.
+* Increase of complexity and wiring if not properly ordered
+* Eulers path defines the best input ordering to meet the needs of layout. 
+  * Network graphs are constructed
+  * Number the nodes
+  * Transistors as edges between the nodes
+* The Layout should be drawn in lines with the Design rules specified for tech node under consideration.
+### CMOS Fabrication Process
+A 16-mask process is explained with each step in detail 
+* Selection of Substrate
+* Active region for Transistors - Mask1
+* N-well, P-well formation  - Mask2 and Mask-3
+* Formation of Gate -Mask 4, Mask-5, Mask-6
+* Lightly doped drain formation - Mask-7, Mask-8
+* Source and Drain Formation - Mask-9, Mask-10
+* Contacts and Interconnects - Mask-11
+* High level metal formation -Mask-12 to Mask-16
