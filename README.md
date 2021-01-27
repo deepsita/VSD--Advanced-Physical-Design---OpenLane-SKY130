@@ -5,26 +5,24 @@ The workflow for automation of RTL to GDSII using Sky-water PDK and open-source 
   The workshop is hosted on virtual learning platform called Intelligent Assesment Technology which unlocks the potential of everyone. The course is designed to bring up a solution in bridging the gap of theoretical concepts and practical experience.
 
 ## Introduction
-The 5-day workshop covers the open-source tool chain using the open-source sky-water pdk for each step in RTL-GDSII.
-The various tools used in openlane flow are Yosys for synthesis, opensta for Static timing analysis, OpenROAD for floorplanning, placement, CTS, global routing etc. 
-
+The 5-day workshop covers the open-source tool chain using the open-source sky-water pdk for each step in RTL-GDSII. The transformation of circuit description into physical layout which describes the position of instances and the interconnections is called the physical design in VLSI Design.
+The workshop targets the day-wise step-upof the skills required for the physical design in VLSI System Design.
 ## Day-1
-## SoC Design and Open-Source Tool Chain for ASIC Design
-### Components of a SoC
+### SoC Design and Open-Source Tool Chain for ASIC Design
+#### Components of a SoC - 
 * The chip has the core where all the logic, Macros, Foundary IP's lies and pads for signal I/O and the total die after the floorplanning, placement, routing etc are completed. 
 * Interface between an application and actual hardware is brought in by the system software. 
 * However, the hardware understands only the binaries, and hence an abstract interface which starts with Intruction Set Architecture, then the RTL Description.
 * Once RTL description is done, then the process of conversion of RTL to physical chip is done. 
-### Introduction to RISC-V picoSoc
-RISC-V is an open-source standard instruction set architecture (ISA). Each SoC has a RISC-V processor, memory, a range of I/O, and interfaces for embedding user functions. PicoSoC example components are UART, SPI memory controller, Scratchpad SRAM memory, SPI flash memo.
-## ASIC Design Flow 
+* RISC-V is an open-source standard instruction set architecture (ISA). Each SoC has a RISC-V processor, memory, a range of I/O, and interfaces for embedding user functions. PicoSoC example components are UART, SPI memory controller, Scratchpad SRAM memory, SPI flash memo. The reference design of Raven PicoSoc - picorv32 is considered for further steps.
+### ASIC Design Flow 
 * The complete ASIC design requires three major components
   * RTL description of the design
   * EDA Tool
   * PDK(Process design kit)
 * The RTL description of the Soc is done as the initial step. The reference design of Raven PicoSoc - picorv32 is considered for further steps.
 
-### Open-Source tools for chip design
+#### Open-Source tools for chip design - OpenLANE Tool Chain 
 | Design Step                                | Tool      |
 |--------------------------------------------|-----------|
 | Synthesis                                  | Yosys     |
@@ -35,17 +33,22 @@ RISC-V is an open-source standard instruction set architecture (ISA). Each SoC h
 | Pre-layout, post-layout, spice simulations | NGSPICE   |
 | Static Timing Analysis                     | OpenTimer |
 
-### Open-Source PDK for chip design
+#### Open-Source PDK for chip design
 The SkyWater Open Source PDK is a collaboration between Google and SkyWater Technology Foundry to provide a fully open source Process Design Kit and related resources, which can be used to create manufacturable designs at SkyWater’s facility.
 The latest SkyWater SKY130 PDK design resources can be viewed at the following locations:
 * [On Github @ google/skywater-pdk](https://github.com/google/skywater-pdk)
 * Google CodeSearch interface @ https://cs.opensource.google/skywater-pdk
 * [foss-eda-tools.googlesource.com/skywater-pdk](https://foss-eda-tools.googlesource.com/skywater-pdk)
 
-### Final Steps
+#### Final Steps
 * The RTL is converted to gate level netlist with Synthesis tool called Yosys embedded in the Openlane tool chain.
 * Then comes the floorplanning, placement, Routing, CTS.
 * The most important step is Static Timing Analysis (STA) which should be performed at each and every juncture of the design step in order to meet the requirements of the design.
+ 
+ 
+ 
+ 
+ 
  
 ## Day-2
 ##Chip Floorplanning and Standard Cells
