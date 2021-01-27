@@ -8,7 +8,7 @@ The workflow for automation of RTL to GDSII using Sky-water PDK and open-source 
 The 5-day workshop covers the open-source tool chain called openlane using the open-source sky-water pdk for each step in RTL-GDSII. The transformation of circuit description into physical layout which describes the position of instances and the interconnections is called the physical design in VLSI Design.
 The workshop targets the day-wise step-upof the skills required for the physical design in VLSI System Design.
 ## Day-1
-### SoC Design and Open-Source Tool Chain for ASIC Design
+### SoC Design and Open-Source Tool Chain 
 #### Components of a SoC - 
 * The chip has the core where all the logic, Macros, Foundary IP's lies and pads for signal I/O and the total die after the floorplanning, placement, routing etc are completed. 
 * Interface between an application and actual hardware is brought in by the system software. 
@@ -34,7 +34,7 @@ The workshop targets the day-wise step-upof the skills required for the physical
 | Static Timing Analysis                     | OpenTimer |
 
 #### Open-Source PDK for chip design
-The SkyWater Open Source PDK is a collaboration between Google and SkyWater Technology Foundry to provide a fully open source Process Design Kit and related resources, which can be used to create manufacturable designs at SkyWater’s facility.
+Process Design Kit(PDKs) contains device models, digital standard cell libraries, process design rules etc. used for fabrication. The SkyWater Open Source PDK is a collaboration between Google and SkyWater Technology Foundry to provide a fully open source Process Design Kit and related resources, which can be used to create manufacturable designs at SkyWater’s facility.
 The latest SkyWater SKY130 PDK design resources can be viewed at the following locations:
 * [On Github @ google/skywater-pdk](https://github.com/google/skywater-pdk)
 * Google CodeSearch interface @ https://cs.opensource.google/skywater-pdk
@@ -44,10 +44,33 @@ The latest SkyWater SKY130 PDK design resources can be viewed at the following l
 * The RTL is converted to gate level netlist with Synthesis tool called Yosys embedded in the Openlane tool chain.
 * Then comes the floorplanning, placement, Routing, CTS.
 * The most important step is Static Timing Analysis (STA) which should be performed at each and every juncture of the design step in order to meet the requirements of the design.
+
+### OpenLane - Basics and Synthesis
+#### The OpenLane Directory Structure
+There are two directories inside the working directory, 1. "openlane_flow" where all the design and the flow based files are placed. 2. The "sky130" folder has "libs.ref" and "libs.tech" , these are the folders which have the files specific to tool and specific to technology. The designs are saved in the path 
+" /openlane_working_dir/openlane_flow/designs".
+#### Synthesis of RTL
+Steps for the synthesis of the design using openlane are
+ * Invoke the openlane tool : - The openlane tool can be invoked from the flow.tcl file. The interactive mode switch gives the option to work with the tool configurations on the fly at any step of the PD.
+
+
+         ./flow.tcl -interactive
+     
+ * Import the packages:- The package required to run the openlane flow is to be specified.
+        
+        package require openlane 0.9
+ * Design setup :- The preparation of the design is to be done to create the required directories for further steps. The switch -tag is optional and can be used when the specific folder is required to be used for the further steps. -overwrite is one more optional switch which can be utilised when the values of the configuration are required to be changed.
  
  
- 
- 
+        prep -design picorv32a
+        prep -design picorv32a -tag <any name>
+        prep -design picorv32a -tag <any name> -overwrite        p
+ * Synthesis :- The synthesis is done by Yosys and ABC tools for the conversion of RTL to netlist description. The Analysis of Flop Ratio, Instance Count, timing behavior etc can be performed after the synthesis if the design. The synthesis is done by following command.
+
+
+        run_synthesis
+
+ All the specified steps can be observed in the below images. 
  
  
 ## Day-2
