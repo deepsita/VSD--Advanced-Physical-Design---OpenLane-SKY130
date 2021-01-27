@@ -124,6 +124,8 @@ This generates a floorplan.def file whhich can be viwed using magic with the com
 The resultant floorplan can be seen as below
 
 <img width="700" alt="Screenshot (450)" src="https://user-images.githubusercontent.com/25682001/106057140-8647ec00-6115-11eb-8865-08cbe288ac6c.png">
+
+
 ## Design and Charecterisation of Library cells
 ### Intro to Library Standard Cells
 * Standard Cells in the library can be ANDGate, Or gate, Buffer, DFF etc.
