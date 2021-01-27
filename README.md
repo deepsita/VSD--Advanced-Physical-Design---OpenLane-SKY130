@@ -64,14 +64,21 @@ Steps for the synthesis of the design using openlane are
  
         prep -design picorv32a
         prep -design picorv32a -tag <any name>
-        prep -design picorv32a -tag <any name> -overwrite        p
+        prep -design picorv32a -tag <any name> -overwrite
+ All the specified steps can be observed in the below images. 
+ ![Screenshot (416)](https://user-images.githubusercontent.com/25682001/106051614-b049e000-610e-11eb-9f0a-bd378e67b158.png)
+ 
+![Screenshot (447)](https://user-images.githubusercontent.com/25682001/106052251-5d245d00-610f-11eb-9bec-206b4a9b219e.png)
+ 
  * Synthesis :- The synthesis is done by Yosys and ABC tools for the conversion of RTL to netlist description. The Analysis of Flop Ratio, Instance Count, timing behavior etc can be performed after the synthesis if the design. The synthesis is done by following command.
 
 
         run_synthesis
 
- All the specified steps can be observed in the below images. 
- 
+The synthesis result can be utilised tocount the Buffer Ratio, FLop Ratio etc. The buffer ratio can be observedfrom the results obtained as below.
+
+![Screenshot (448)](https://user-images.githubusercontent.com/25682001/106053808-39faad00-6111-11eb-87ad-b800645ec6e2.png)
+
  
 ## Day-2
 ##Chip Floorplanning and Standard Cells
