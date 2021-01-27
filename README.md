@@ -1,11 +1,11 @@
-# OpenLANE-Workshop
+# OpenLane-Workshop
 The workflow for automation of RTL to GDSII using Sky-water PDK and open-source tool chain called OpenLANE.
 ## Framework of the workshop 
   ### Aim - Learn - Assess - Practice - Bridge the gap - Industry Ready
   The workshop is hosted on virtual learning platform called Intelligent Assesment Technology which unlocks the potential of everyone. The course is designed to bring up a solution in bridging the gap of theoretical concepts and practical experience.
 
 ## Introduction
-The 5-day workshop covers the open-source tool chain using the open-source sky-water pdk for each step in RTL-GDSII. The transformation of circuit description into physical layout which describes the position of instances and the interconnections is called the physical design in VLSI Design.
+The 5-day workshop covers the open-source tool chain called openlane using the open-source sky-water pdk for each step in RTL-GDSII. The transformation of circuit description into physical layout which describes the position of instances and the interconnections is called the physical design in VLSI Design.
 The workshop targets the day-wise step-upof the skills required for the physical design in VLSI System Design.
 ## Day-1
 ### SoC Design and Open-Source Tool Chain for ASIC Design
@@ -22,7 +22,7 @@ The workshop targets the day-wise step-upof the skills required for the physical
   * PDK(Process design kit)
 * The RTL description of the Soc is done as the initial step. The reference design of Raven PicoSoc - picorv32 is considered for further steps.
 
-#### Open-Source tools for chip design - OpenLANE Tool Chain 
+#### Open-Source tools for chip design - OpenLane Tool Chain 
 | Design Step                                | Tool      |
 |--------------------------------------------|-----------|
 | Synthesis                                  | Yosys     |
