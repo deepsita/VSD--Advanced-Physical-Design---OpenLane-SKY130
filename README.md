@@ -79,7 +79,7 @@ The synthesis result can be utilised tocount the Buffer Ratio, FLop Ratio etc. T
 <img width="700" alt="Screenshot (448)" src="https://user-images.githubusercontent.com/25682001/106053808-39faad00-6111-11eb-87ad-b800645ec6e2.png"> 
 
 ## Day-2
-##Chip Floorplanning and Standard Cells
+## Chip Floorplanning and Standard Cells
 The concepts of chip floor planning considerations, Binding the library to the design, cell design flow and timing charecterisation parameters were presented. 
 ### Height and width of core
 * Core is the section of chip where the fundamental logic is placed
@@ -112,7 +112,18 @@ The concepts of chip floor planning considerations, Binding the library to the d
 * Placement of the logic
 * optimise the placement by inserting repeater
 
+The floorplanning of the design can be done with the following command
 
+
+      run_floorplan
+      
+This generates a floorplan.def file whhich can be viwed using magic with the command shown in below image.
+ <img width="700" alt="Screenshot (449)" src="https://user-images.githubusercontent.com/25682001/106056594-da060580-6114-11eb-8065-e4846ad32dc1.png"> 
+
+
+The resultant floorplan can be seen as below
+
+<img width="700" alt="Screenshot (450)" src="https://user-images.githubusercontent.com/25682001/106057140-8647ec00-6115-11eb-8865-08cbe288ac6c.png">
 ## Design and Charecterisation of Library cells
 ### Intro to Library Standard Cells
 * Standard Cells in the library can be ANDGate, Or gate, Buffer, DFF etc.
@@ -149,19 +160,13 @@ The concepts of chip floor planning considerations, Binding the library to the d
     * OUT Rise,fall 
  * Propagation Delay
  * Transition Time
- 
+
+
+## Day-3
 ### SPICE Simulations
 * SPICE Deck
 * NGSPICE commands for simulation of spice definitions of the circuits
 * Evaluation of Static and Dynamic behavior of CMOS INverter
-### Art of Layout - Euler's path and stick diagrams
-* Importance of ordering of inputs i.e., poly bars in the layout.
-* Increase of complexity and wiring if not properly ordered
-* Eulers path defines the best input ordering to meet the needs of layout. 
-  * Network graphs are constructed
-  * Number the nodes
-  * Transistors as edges between the nodes
-* The Layout should be drawn in lines with the Design rules specified for tech node under consideration.
 ### CMOS Fabrication Process
 A 16-mask process is explained with each step in detail 
 * Selection of Substrate
