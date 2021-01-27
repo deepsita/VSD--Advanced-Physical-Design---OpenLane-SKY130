@@ -1,5 +1,5 @@
-# OpenLane-Workshop
-The workflow for automation of RTL to GDSII using Sky-water PDK and open-source tool chain called OpenLANE.
+# Physical Design using OpenLane 
+The workflow for automated RTL to GDSII using Sky-water PDK and open-source tool chain called OpenLane is the objective of the workshop. 
 ## Framework of the workshop 
   ### Aim - Learn - Assess - Practice - Bridge the gap - Industry Ready
   The workshop is hosted on virtual learning platform called Intelligent Assesment Technology which unlocks the potential of everyone. The course is designed to bring up a solution in bridging the gap of theoretical concepts and practical experience.
@@ -66,9 +66,8 @@ Steps for the synthesis of the design using openlane are
         prep -design picorv32a -tag <any name>
         prep -design picorv32a -tag <any name> -overwrite
  All the specified steps can be observed in the below images. 
- ![Screenshot (416)](https://user-images.githubusercontent.com/25682001/106051614-b049e000-610e-11eb-9f0a-bd378e67b158.png)
- 
-![Screenshot (447)](https://user-images.githubusercontent.com/25682001/106052251-5d245d00-610f-11eb-9bec-206b4a9b219e.png)
+<img width="700" alt="Screenshot (416)" src="https://user-images.githubusercontent.com/25682001/106051614-b049e000-610e-11eb-9f0a-bd378e67b158.png"> 
+<img width="700" alt="Screenshot (447)" src="https://user-images.githubusercontent.com/25682001/106052251-5d245d00-610f-11eb-9bec-206b4a9b219e.png"> 
  
  * Synthesis :- The synthesis is done by Yosys and ABC tools for the conversion of RTL to netlist description. The Analysis of Flop Ratio, Instance Count, timing behavior etc can be performed after the synthesis if the design. The synthesis is done by following command.
 
@@ -77,9 +76,8 @@ Steps for the synthesis of the design using openlane are
 
 The synthesis result can be utilised tocount the Buffer Ratio, FLop Ratio etc. The buffer ratio can be observedfrom the results obtained as below.
 
-![Screenshot (448)](https://user-images.githubusercontent.com/25682001/106053808-39faad00-6111-11eb-87ad-b800645ec6e2.png)
+<img width="700" alt="Screenshot (448)" src="https://user-images.githubusercontent.com/25682001/106053808-39faad00-6111-11eb-87ad-b800645ec6e2.png"> 
 
- 
 ## Day-2
 ##Chip Floorplanning and Standard Cells
 The concepts of chip floor planning considerations, Binding the library to the design, cell design flow and timing charecterisation parameters were presented. 
