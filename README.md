@@ -217,3 +217,30 @@ The simulation result can be seen in the below image.
 The timing parameters can be calculated from the cordinates as shown below.
 
 <img width="500" alt="cell_rise_delay_prop_delay" src="https://user-images.githubusercontent.com/25682001/106287404-c077d180-626c-11eb-8115-fe47295c19ff.png">
+
+
+## Day-4
+
+### Insertion of Custom Cell in the reference design
+The designed standard cell is plugged into a complex design and perform it's PnR in the openlane flow. The standard cell chosen is a basic CMOS inverter and the design into which it's plugged into is a pre-built picorv32a core.
+
+The steps to be performed are as below
+1. create a bounding box with the command    $property FIXED_BBOX {0 0 138 272}.
+2. Insertion of all layers to form Power/Ground Rails, PMOS/NMOS Transistors, Input and Output pins.
+3. LEF file Preperation Steps: - This needs few more sub-steps  i.e.,i) Defining port ii) setting class ii)use attributes to each port.
+
+<img width="500" alt="9" src= (https://user-images.githubusercontent.com/25682001/106292480-dee0cb80-6272-11eb-8677-561af911bd7f.png)
+<img width="500" alt="10" src= (https://user-images.githubusercontent.com/25682001/106292496-e43e1600-6272-11eb-97b2-a96f233b6e1f.png)
+<img width="500" alt="11" src= "https://user-images.githubusercontent.com/25682001/106292460-da1c1780-6272-11eb-983f-e04c4ba74c39.png">
+
+4. LEF file EXtraction. The command for LEF file extraction from the layout is
+
+        lef write sky130_inv.lef
+        
+   The lef file output is as in the below image
+   <img width="500" alt="12" src= "https://user-images.githubusercontent.com/25682001/106292829-4dbe2480-6273-11eb-9d8d-0251ba37dc82.png">
+
+### STA
+
+### CTS
+
