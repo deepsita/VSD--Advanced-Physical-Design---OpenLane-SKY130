@@ -214,3 +214,6 @@ The simulation result can be seen in the below image.
 
 <img width="500" alt="7" src="https://user-images.githubusercontent.com/25682001/106283907-80165480-6268-11eb-86c2-4ba5349846b3.png">
 
+The timing parameters can be calculated from the cordinates as shown below.
+
+<img width="500" alt="cell_rise_delay_prop_delay" src="https://user-images.githubusercontent.com/25682001/106287404-c077d180-626c-11eb-8115-fe47295c19ff.png">
