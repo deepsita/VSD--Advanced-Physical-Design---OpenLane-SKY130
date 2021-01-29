@@ -4,9 +4,11 @@ The workflow for automated RTL to GDSII using Sky-water PDK and open-source tool
   ### Aim - Learn - Assess - Practice - Bridge the gap - Industry Ready
   The workshop is hosted on virtual learning platform called Intelligent Assesment Technology which unlocks the potential of everyone. The course is designed to bring up a solution in bridging the gap of theoretical concepts and practical experience.
 
+
 ## Introduction
 The 5-day workshop covers the open-source tool chain called openlane using the open-source sky-water pdk for each step in RTL-GDSII. The transformation of circuit description into physical layout which describes the position of instances and the interconnections is called the physical design in VLSI Design.
 The workshop targets the day-wise step-upof the skills required for the physical design in VLSI System Design.
+<img width="325" alt="image_39b568fa-144a-4e00-834c-cd8cd70d24b420210129_151448" src="https://user-images.githubusercontent.com/25682001/106277463-2c533d80-625f-11eb-9bd9-4ce9d3989ff3.jpg">
 ## Day-1
 ### SoC Design and Open-Source Tool Chain 
 #### Components of a SoC - 
@@ -14,7 +16,6 @@ The workshop targets the day-wise step-upof the skills required for the physical
 * Interface between an application and actual hardware is brought in by the system software. 
 * However, the hardware understands only the binaries, and hence an abstract interface which starts with Intruction Set Architecture, then the RTL Description.
 * Once RTL description is done, then the process of conversion of RTL to physical chip is done. 
-* RISC-V is an open-source standard instruction set architecture (ISA). Each SoC has a RISC-V processor, memory, a range of I/O, and interfaces for embedding user functions. PicoSoC example components are UART, SPI memory controller, Scratchpad SRAM memory, SPI flash memo. The reference design of Raven PicoSoc - picorv32 is considered for further steps.
 ### ASIC Design Flow 
 * The complete ASIC design requires three major components
   * RTL description of the design
@@ -80,34 +81,27 @@ The synthesis result can be utilised tocount the Buffer Ratio, FLop Ratio etc. T
 
 ## Day-2
 ## Chip Floorplanning and Standard Cells
-The concepts of chip floor planning considerations, Binding the library to the design, cell design flow and timing charecterisation parameters were presented. 
 ### Height and width of core
 * Core is the section of chip where the fundamental logic is placed
 * Die consists of core and it is a ssemiconductor material on which the circuit is fabricated.
-* Utilisation factor is the ratio of Area occupied by netlist and the Total Area of core. The 100% utilisation refers to Utilisation factor being 1. However, in the practical scenarios only 50-60% utilisation is considered in order to provide place for other routing and filler cells etc.
+* Utilisation factor is the ratio of Area occupied by netlist and the Total Area of core. The 100% utilisation refers to Utilisation factor being 1.
 * Aspect Ratio is the ratio o the heught and width of the core. The Aspect ratio of 1 refers to a square chip. 
 ### Pre-placed Cells
-* Pre-placed cells are those which are implemented once and instantiated many times. The arrangement of these IPs in the chip is referred to as Floorplanning.
-* These IPs/blocks have user defined locations and hence are placed in chip before the automated placement and routing.
-
+* Pre-placed cells are those which are implemented once and instantiated many times. 
+* The arrangement of these IPs in the chip is referred to as Floorplanning.
 ### Decoupling Capacitors
 * Large complex circuits will have high amount of switching current.
-* Noise mArgin specs define the logic'0' and logic '1' valid voltages and undefined regions.
+* Noise margin specs define the logic'0' and logic '1' valid voltages and undefined regions.
 * The high switching current demand can be solved by addition of decoupling capacitors in parallel with the circuit.
-
 ### Power Planning
 * The power planning should be done in a way that the driver and load be close to each other in the 'L' sense. 
 * The improper power planning i.e., single power and Ground lines can lead to 'Ground bounce' and 'Voltage Drrop'.
 * So the plan should have multiple 'VDD', 'VSS' lines running through the circuit.
-
 ### Pin Placement
-
 * The conectivity of the chip to the outside world.
 * The placement of the pins is dependent on the position (near/far) but not on the ordering. 
 * The clock ports are found to be bigger than the general data ports in order to necessitate for less resistance. 
-
 ### Placement and Routing
-
 * Bind the netlist with the physical cells i.e., library cells
 * Placement of the logic
 * optimise the placement by inserting repeater
@@ -123,9 +117,16 @@ This generates a floorplan.def file whhich can be viwed using magic with the com
 
 The resultant floorplan can be seen as below
 
-<img width="700" alt="Screenshot (450)" src="https://user-images.githubusercontent.com/25682001/106057140-8647ec00-6115-11eb-8865-08cbe288ac6c.png">
+<img width="500" alt="Screenshot (450)" src="https://user-images.githubusercontent.com/25682001/106057140-8647ec00-6115-11eb-8865-08cbe288ac6c.png">
 
 
+The Placement of the floor planned design can be done with the following command
+
+
+    run_placement
+    
+The overflow value needs to be converging to 0. And the placement cell legalization will be reported as in the below image
+<img width="300" alt="legality" src="https://user-images.githubusercontent.com/25682001/106281073-bd78e300-6264-11eb-9d26-18cac35fdb91.png">
 ## Design and Charecterisation of Library cells
 ### Intro to Library Standard Cells
 * Standard Cells in the library can be ANDGate, Or gate, Buffer, DFF etc.
@@ -162,13 +163,40 @@ The resultant floorplan can be seen as below
     * OUT Rise,fall 
  * Propagation Delay
  * Transition Time
-
-
 ## Day-3
 ### SPICE Simulations
 * SPICE Deck
 * NGSPICE commands for simulation of spice definitions of the circuits
 * Evaluation of Static and Dynamic behavior of CMOS INverter
+* Timing Parameters:
+    * Rise Delay : Time taken for waveform to rise from 20% to 80% of VDD.
+    * Fall Delay : Time taken for waveform to fall from 80% to 20% of VDD.
+   *  Propagation Delay : Measured between 50% of Input transition to 50% of Output transition.
+
+The Inverter cell under consideration can be cloned from the specified git repo and the layout can be viewed in MAGIC to check for any DRC errors and then the SPICE netlist is extracted and the analysis is performed.
+<img width="700" alt="1" src="(https://user-images.githubusercontent.com/25682001/106283218-a4256600-6267-11eb-8b8b-1d0f26d076c2.png)">
+<img width="700" alt="2" src="(https://user-images.githubusercontent.com/25682001/106283202-a12a7580-6267-11eb-9baf-aa6efcbcbc72.png)">
+<img width="700" alt="4" src="(https://user-images.githubusercontent.com/25682001/106283212-a2f43900-6267-11eb-8fca-a0632f8f8f03.png)">
+The spice deck basically contains the model files, component connectivity information, Type of analysis to be done, Load capacitance values etc. The previously extracted spice is edited according to the connectivity and libraries. The Spice Deck for the custom designed inverter cell can be as below.
+
+<img width="700" alt="5" src="(https://user-images.githubusercontent.com/25682001/106282945-4abd3700-6267-11eb-9743-aa0c2d394614.png)">
+
+The simulation of the spice netlist is shown below, 
+The commands for simulation is
+
+    ngspice sky130_inv.spice
+
+
+
+<img width="700" alt="6" src="(https://user-images.githubusercontent.com/25682001/106283911-81e01800-6268-11eb-8bcc-5fd50c7e4543.png)">
+
+ Since the simulation commands are given inside the spice file, there is no requirement to give the commands explicitly except for plotting the waveform. 
+ 
+  
+    plot y vs time a
+    
+The simulation result can be seen in the below image.
+<img width="700" alt="7" src="(https://user-images.githubusercontent.com/25682001/106283907-80165480-6268-11eb-86c2-4ba5349846b3.png)">
 ### CMOS Fabrication Process
 A 16-mask process is explained with each step in detail 
 * Selection of Substrate
