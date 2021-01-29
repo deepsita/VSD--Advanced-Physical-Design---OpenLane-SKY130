@@ -67,8 +67,8 @@ Steps for the synthesis of the design using openlane are
         prep -design picorv32a -tag <any name>
         prep -design picorv32a -tag <any name> -overwrite
  All the specified steps can be observed in the below images. 
-<img width="700" alt="Screenshot (416)" src="https://user-images.githubusercontent.com/25682001/106051614-b049e000-610e-11eb-9f0a-bd378e67b158.png"> 
-<img width="700" alt="Screenshot (447)" src="https://user-images.githubusercontent.com/25682001/106052251-5d245d00-610f-11eb-9bec-206b4a9b219e.png"> 
+<img width="500" alt="Screenshot (416)" src="https://user-images.githubusercontent.com/25682001/106051614-b049e000-610e-11eb-9f0a-bd378e67b158.png"> 
+<img width="500" alt="Screenshot (447)" src="https://user-images.githubusercontent.com/25682001/106052251-5d245d00-610f-11eb-9bec-206b4a9b219e.png"> 
  
  * Synthesis :- The synthesis is done by Yosys and ABC tools for the conversion of RTL to netlist description. The Analysis of Flop Ratio, Instance Count, timing behavior etc can be performed after the synthesis if the design. The synthesis is done by following command.
 
@@ -77,7 +77,7 @@ Steps for the synthesis of the design using openlane are
 
 The synthesis result can be utilised tocount the Buffer Ratio, FLop Ratio etc. The buffer ratio can be observedfrom the results obtained as below.
 
-<img width="700" alt="Screenshot (448)" src="https://user-images.githubusercontent.com/25682001/106053808-39faad00-6111-11eb-87ad-b800645ec6e2.png"> 
+<img width="500" alt="Screenshot (448)" src="https://user-images.githubusercontent.com/25682001/106053808-39faad00-6111-11eb-87ad-b800645ec6e2.png"> 
 
 ## Day-2
 ## Chip Floorplanning and Standard Cells
@@ -112,7 +112,7 @@ The floorplanning of the design can be done with the following command
       run_floorplan
       
 This generates a floorplan.def file whhich can be viwed using magic with the command shown in below image.
- <img width="700" alt="Screenshot (449)" src="https://user-images.githubusercontent.com/25682001/106056594-da060580-6114-11eb-8065-e4846ad32dc1.png"> 
+ <img width="500" alt="Screenshot (449)" src="https://user-images.githubusercontent.com/25682001/106056594-da060580-6114-11eb-8065-e4846ad32dc1.png"> 
 
 
 The resultant floorplan can be seen as below
@@ -185,13 +185,13 @@ A 16-mask process is explained with each step in detail
 
 The Inverter cell under consideration can be cloned from the specified git repo and the layout can be viewed in MAGIC to check for any DRC errors and then the SPICE netlist is extracted and the analysis is performed.
 
-<img width="700" alt="1" src="https://user-images.githubusercontent.com/25682001/106283218-a4256600-6267-11eb-8b8b-1d0f26d076c2.png">
-<img width="700" alt="2" src="https://user-images.githubusercontent.com/25682001/106283202-a12a7580-6267-11eb-9baf-aa6efcbcbc72.png">
-<img width="700" alt="4" src="https://user-images.githubusercontent.com/25682001/106283212-a2f43900-6267-11eb-8fca-a0632f8f8f03.png">
+<img width="500" alt="1" src="https://user-images.githubusercontent.com/25682001/106283218-a4256600-6267-11eb-8b8b-1d0f26d076c2.png">
+<img width="500" alt="2" src="https://user-images.githubusercontent.com/25682001/106283202-a12a7580-6267-11eb-9baf-aa6efcbcbc72.png">
+<img width="500" alt="4" src="https://user-images.githubusercontent.com/25682001/106283212-a2f43900-6267-11eb-8fca-a0632f8f8f03.png">
 
 The spice deck basically contains the model files, component connectivity information, Type of analysis to be done, Load capacitance values etc. The previously extracted spice is edited according to the connectivity and libraries. The Spice Deck for the custom designed inverter cell can be as below.
 
-<img width="700" alt="5" src="https://user-images.githubusercontent.com/25682001/106282945-4abd3700-6267-11eb-9743-aa0c2d394614.png">
+<img width="500" alt="5" src="https://user-images.githubusercontent.com/25682001/106282945-4abd3700-6267-11eb-9743-aa0c2d394614.png">
 The simulation of the spice netlist is shown below, 
 The commands for simulation is
 
@@ -199,7 +199,7 @@ The commands for simulation is
 
 
 
-<img width="700" alt="6" src="https://user-images.githubusercontent.com/25682001/106283911-81e01800-6268-11eb-8bcc-5fd50c7e4543.png">
+<img width="500" alt="6" src="https://user-images.githubusercontent.com/25682001/106283911-81e01800-6268-11eb-8bcc-5fd50c7e4543.png">
 
 Since the simulation commands are given inside the spice file, there is no requirement to give the commands explicitly except for plotting the waveform. 
  
@@ -207,5 +207,5 @@ Since the simulation commands are given inside the spice file, there is no requi
     plot y vs time a
     
 The simulation result can be seen in the below image.
-<img width="700" alt="7" src="https://user-images.githubusercontent.com/25682001/106283907-80165480-6268-11eb-86c2-4ba5349846b3.png">
+<img width="500" alt="7" src="https://user-images.githubusercontent.com/25682001/106283907-80165480-6268-11eb-86c2-4ba5349846b3.png">
 
