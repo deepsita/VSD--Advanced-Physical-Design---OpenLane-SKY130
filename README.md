@@ -66,7 +66,9 @@ Steps for the synthesis of the design using openlane are
         prep -design picorv32a
         prep -design picorv32a -tag <any name>
         prep -design picorv32a -tag <any name> -overwrite
+        
  All the specified steps can be observed in the below images. 
+ 
 <img width="500" alt="Screenshot (416)" src="https://user-images.githubusercontent.com/25682001/106051614-b049e000-610e-11eb-9f0a-bd378e67b158.png"> 
 <img width="500" alt="Screenshot (447)" src="https://user-images.githubusercontent.com/25682001/106052251-5d245d00-610f-11eb-9bec-206b4a9b219e.png"> 
  
@@ -112,6 +114,7 @@ The floorplanning of the design can be done with the following command
       run_floorplan
       
 This generates a floorplan.def file whhich can be viwed using magic with the command shown in below image.
+
  <img width="500" alt="Screenshot (449)" src="https://user-images.githubusercontent.com/25682001/106056594-da060580-6114-11eb-8065-e4846ad32dc1.png"> 
 
 
@@ -192,6 +195,7 @@ The Inverter cell under consideration can be cloned from the specified git repo 
 The spice deck basically contains the model files, component connectivity information, Type of analysis to be done, Load capacitance values etc. The previously extracted spice is edited according to the connectivity and libraries. The Spice Deck for the custom designed inverter cell can be as below.
 
 <img width="500" alt="5" src="https://user-images.githubusercontent.com/25682001/106282945-4abd3700-6267-11eb-9743-aa0c2d394614.png">
+
 The simulation of the spice netlist is shown below, 
 The commands for simulation is
 
@@ -207,5 +211,6 @@ Since the simulation commands are given inside the spice file, there is no requi
     plot y vs time a
     
 The simulation result can be seen in the below image.
+
 <img width="500" alt="7" src="https://user-images.githubusercontent.com/25682001/106283907-80165480-6268-11eb-86c2-4ba5349846b3.png">
 
