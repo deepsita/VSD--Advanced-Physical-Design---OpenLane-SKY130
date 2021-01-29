@@ -229,8 +229,8 @@ The steps to be performed are as below
 2. Insertion of all layers to form Power/Ground Rails, PMOS/NMOS Transistors, Input and Output pins.
 3. LEF file Preperation Steps: - This needs few more sub-steps  i.e.,i) Defining port ii) setting class ii)use attributes to each port.
 
-<img width="500" alt="9" src= (https://user-images.githubusercontent.com/25682001/106292480-dee0cb80-6272-11eb-8677-561af911bd7f.png)
-<img width="500" alt="10" src= (https://user-images.githubusercontent.com/25682001/106292496-e43e1600-6272-11eb-97b2-a96f233b6e1f.png)
+<img width="500" alt="9" src= "https://user-images.githubusercontent.com/25682001/106292480-dee0cb80-6272-11eb-8677-561af911bd7f.png">
+<img width="500" alt="10" src= "https://user-images.githubusercontent.com/25682001/106292496-e43e1600-6272-11eb-97b2-a96f233b6e1f.png>
 <img width="500" alt="11" src= "https://user-images.githubusercontent.com/25682001/106292460-da1c1780-6272-11eb-983f-e04c4ba74c39.png">
 
 4. LEF file EXtraction. The command for LEF file extraction from the layout is
@@ -239,8 +239,46 @@ The steps to be performed are as below
         
    The lef file output is as in the below image
    <img width="500" alt="12" src= "https://user-images.githubusercontent.com/25682001/106292829-4dbe2480-6273-11eb-9d8d-0251ba37dc82.png">
-
-### STA
+5. Insertion of custom LEF into the openlane flow requires the following commands to be included in the config.tcl
+  
+        set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]
+        set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+        add_lefs -src $lefs
+        
+Now, repeat the openlane flow steps i.e, synthesis, floorplan and placement.
+Any slack violations can be rectified by one or more of following mechanisms
+* SYNTH_STRATEGY checking
+* Cell BUFFERING
+* Cell replpacement manually by observing the critical path with OPENSTA tool
+* Fanout value optimisation
 
 ### CTS
+* There are different algorithms for the clock tree synthesis out of which H-Tree is the most popular one. Clock skew is the difference between arrival times of the clock for sequential elements across the design.  
+The CTS can be performed with the command
+
+      run_cts
+ 
+ OpenLANE will generate a new .def fil after CTS. To view this, invoke the .def file with the Magic tool. 
+ 
+ ![openroad_cmds_post_cts](https://user-images.githubusercontent.com/25682001/106294994-e5247700-6275-11eb-9646-c613e40b22b8.png)
+ ![ppostcts_hold_slack](https://user-images.githubusercontent.com/25682001/106295013-eb1a5800-6275-11eb-986b-f52a61efe3bf.png)
+ ![post_cts_slack](https://user-images.githubusercontent.com/25682001/106295005-e81f6780-6275-11eb-91b6-b0765fa7dc6e.png)
+ ![ppostcts_hold_slack](https://user-images.githubusercontent.com/25682001/106295013-eb1a5800-6275-11eb-986b-f52a61efe3bf.png)
+ 
+ The next steps to follow are 
+ * INvoke the openroad tool with the command %openroad
+ * The lef and def files are to be read
+ * .db file is to be created for further analysis
+ 
+  
+        read_def $env(CURRENT_DEF)
+        write_db post_cts.db
+        
+ The .def is utilised for PDN to continue
+ ##Day 5
+ 
+ 
+ ![pdn](https://user-images.githubusercontent.com/25682001/106294996-e5bd0d80-6275-11eb-8b5c-0f4586fb6201.png)
+![pdn_compl](https://user-images.githubusercontent.com/25682001/106295001-e6ee3a80-6275-11eb-9fea-4a53030adb19.png)
+  ![route_cmd](https://user-images.githubusercontent.com/25682001/106295018-ec4b8500-6275-11eb-8879-d36de51c4eca.png)
 
