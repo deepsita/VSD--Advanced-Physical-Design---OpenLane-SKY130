@@ -196,8 +196,8 @@ The spice deck basically contains the model files, component connectivity inform
 
 <img width="500" alt="5" src="https://user-images.githubusercontent.com/25682001/106282945-4abd3700-6267-11eb-9743-aa0c2d394614.png">
 
-The simulation of the spice netlist is shown below, 
-The commands for simulation is
+The command to run the spice netlist is shown below, 
+
 
     ngspice sky130_inv.spice
 
