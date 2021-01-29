@@ -164,39 +164,6 @@ The overflow value needs to be converging to 0. And the placement cell legalizat
  * Propagation Delay
  * Transition Time
 ## Day-3
-### SPICE Simulations
-* SPICE Deck
-* NGSPICE commands for simulation of spice definitions of the circuits
-* Evaluation of Static and Dynamic behavior of CMOS INverter
-* Timing Parameters:
-    * Rise Delay : Time taken for waveform to rise from 20% to 80% of VDD.
-    * Fall Delay : Time taken for waveform to fall from 80% to 20% of VDD.
-   *  Propagation Delay : Measured between 50% of Input transition to 50% of Output transition.
-
-The Inverter cell under consideration can be cloned from the specified git repo and the layout can be viewed in MAGIC to check for any DRC errors and then the SPICE netlist is extracted and the analysis is performed.
-<img width="700" alt="1" src="https://user-images.githubusercontent.com/25682001/106283218-a4256600-6267-11eb-8b8b-1d0f26d076c2.png">
-<img width="700" alt="2" src="https://user-images.githubusercontent.com/25682001/106283202-a12a7580-6267-11eb-9baf-aa6efcbcbc72.png">
-<img width="700" alt="4" src="https://user-images.githubusercontent.com/25682001/106283212-a2f43900-6267-11eb-8fca-a0632f8f8f03.png">
-The spice deck basically contains the model files, component connectivity information, Type of analysis to be done, Load capacitance values etc. The previously extracted spice is edited according to the connectivity and libraries. The Spice Deck for the custom designed inverter cell can be as below.
-
-<img width="700" alt="5" src="https://user-images.githubusercontent.com/25682001/106282945-4abd3700-6267-11eb-9743-aa0c2d394614.png">
-
-The simulation of the spice netlist is shown below, 
-The commands for simulation is
-
-    ngspice sky130_inv.spice
-
-
-
-<img width="700" alt="6" src="https://user-images.githubusercontent.com/25682001/106283911-81e01800-6268-11eb-8bcc-5fd50c7e4543.png">
-
- Since the simulation commands are given inside the spice file, there is no requirement to give the commands explicitly except for plotting the waveform. 
- 
-  
-    plot y vs time a
-    
-The simulation result can be seen in the below image.
-<img width="700" alt="7" src="https://user-images.githubusercontent.com/25682001/106283907-80165480-6268-11eb-86c2-4ba5349846b3.png">
 ### CMOS Fabrication Process
 A 16-mask process is explained with each step in detail 
 * Selection of Substrate
@@ -207,3 +174,38 @@ A 16-mask process is explained with each step in detail
 * Source and Drain Formation - Mask-9, Mask-10
 * Contacts and Interconnects - Mask-11
 * High level metal formation -Mask-12 to Mask-16
+### SPICE Simulations
+* SPICE Deck
+* NGSPICE commands for simulation of spice definitions of the circuits
+* Evaluation of Static and Dynamic behavior of CMOS INverter
+* Timing Parameters:
+    * Rise Delay : Time taken for waveform to rise from 20% to 80% of VDD.
+    * Fall Delay : Time taken for waveform to fall from 80% to 20% of VDD.
+   *  Propagation Delay : Measured between 50% of Input transition to 50% of Output transition.
+
+The Inverter cell under consideration can be cloned from the specified git repo and the layout can be viewed in MAGIC to check for any DRC errors and then the SPICE netlist is extracted and the analysis is performed.
+
+<img width="700" alt="1" src="https://user-images.githubusercontent.com/25682001/106283218-a4256600-6267-11eb-8b8b-1d0f26d076c2.png">
+<img width="700" alt="2" src="https://user-images.githubusercontent.com/25682001/106283202-a12a7580-6267-11eb-9baf-aa6efcbcbc72.png">
+<img width="700" alt="4" src="https://user-images.githubusercontent.com/25682001/106283212-a2f43900-6267-11eb-8fca-a0632f8f8f03.png">
+
+The spice deck basically contains the model files, component connectivity information, Type of analysis to be done, Load capacitance values etc. The previously extracted spice is edited according to the connectivity and libraries. The Spice Deck for the custom designed inverter cell can be as below.
+
+<img width="700" alt="5" src="https://user-images.githubusercontent.com/25682001/106282945-4abd3700-6267-11eb-9743-aa0c2d394614.png">
+The simulation of the spice netlist is shown below, 
+The commands for simulation is
+
+    ngspice sky130_inv.spice
+
+
+
+<img width="700" alt="6" src="https://user-images.githubusercontent.com/25682001/106283911-81e01800-6268-11eb-8bcc-5fd50c7e4543.png">
+
+Since the simulation commands are given inside the spice file, there is no requirement to give the commands explicitly except for plotting the waveform. 
+ 
+  
+    plot y vs time a
+    
+The simulation result can be seen in the below image.
+<img width="700" alt="7" src="https://user-images.githubusercontent.com/25682001/106283907-80165480-6268-11eb-86c2-4ba5349846b3.png">
+
