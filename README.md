@@ -7,6 +7,7 @@ The workflow for automated RTL to GDSII using Sky-water PDK and open-source tool
 # Contents
 - [Day-1](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#day-1)
    * [SoC Design and Open-Source Tool Chain](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#soc-design-and-open-source-tool-chain)
+   * [ASIC Design](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#asic-design-flow)
    * [OpenLane - Basics and Synthesis](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#openlane---basics-and-synthesis)
     
  - [Day-2](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#day-2)
@@ -30,7 +31,7 @@ The workflow for automated RTL to GDSII using Sky-water PDK and open-source tool
 ## Introduction
 The 5-day workshop covers the open-source tool chain called openlane using the open-source sky-water pdk for each step in RTL-GDSII. The transformation of circuit description into physical layout which describes the position of instances and the interconnections is called the physical design in VLSI Design.
 The workshop targets the day-wise step-up of the skills required for the physical design in VLSI System Design.
-<img width="325" alt="image_39b568fa-144a-4e00-834c-cd8cd70d24b420210129_151448" src="https://user-images.githubusercontent.com/25682001/106277463-2c533d80-625f-11eb-9bd9-4ce9d3989ff3.jpg">
+<img width="375" alt="image_39b568fa-144a-4e00-834c-cd8cd70d24b420210129_151448" src="https://user-images.githubusercontent.com/25682001/106277463-2c533d80-625f-11eb-9bd9-4ce9d3989ff3.jpg">
 
 ## Day-1
 ### SoC Design and Open-Source Tool Chain 
