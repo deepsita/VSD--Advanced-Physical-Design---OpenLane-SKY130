@@ -238,7 +238,9 @@ The steps to be performed are as below
         lef write sky130_inv.lef
         
    The lef file output is as in the below image
+   
    <img width="500" alt="12" src= "https://user-images.githubusercontent.com/25682001/106292829-4dbe2480-6273-11eb-9d8d-0251ba37dc82.png">
+   
 5. Insertion of custom LEF into the openlane flow requires the following commands to be included in the config.tcl
   
         set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]
@@ -262,7 +264,7 @@ The CTS can be performed with the command
  
  <img width="500" alt="openroad_cmds_post_cts" src= "https://user-images.githubusercontent.com/25682001/106294994-e5247700-6275-11eb-9646-c613e40b22b8.png">
  <img width="500" alt= "post_cts_slack" src= "https://user-images.githubusercontent.com/25682001/106295005-e81f6780-6275-11eb-91b6-b0765fa7dc6e.png">
- <img width="500" alt= "ppostcts_hold_slack" src=  https://user-images.githubusercontent.com/25682001/106295013-eb1a5800-6275-11eb-986b-f52a61efe3bf.png">
+ <img width="500" alt= "ppostcts_hold_slack" src=  "https://user-images.githubusercontent.com/25682001/106295013-eb1a5800-6275-11eb-986b-f52a61efe3bf.png">
  
  The next steps to follow are 
  * Invoke the openroad tool with the command %openroad
@@ -278,6 +280,8 @@ The CTS can be performed with the command
  
  
   <img width="500" alt="pdn" src= "https://user-images.githubusercontent.com/25682001/106294996-e5bd0d80-6275-11eb-8b5c-0f4586fb6201.png">
- <img width="500" alt="pdn_compl" src= " https://user-images.githubusercontent.com/25682001/106295001-e6ee3a80-6275-11eb-9fea-4a53030adb19.png">
+  
+ <img width="500" alt="pdn_compl" src= "https://user-images.githubusercontent.com/25682001/106295001-e6ee3a80-6275-11eb-9fea-4a53030adb19.png">
+ 
   <img width="500" alt="route_cmd" src= "https://user-images.githubusercontent.com/25682001/106295018-ec4b8500-6275-11eb-8879-d36de51c4eca.png">
 
