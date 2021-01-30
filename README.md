@@ -9,9 +9,12 @@ The workflow for automated RTL to GDSII using Sky-water PDK and open-source tool
 The 5-day workshop covers the open-source tool chain called openlane using the open-source sky-water pdk for each step in RTL-GDSII. The transformation of circuit description into physical layout which describes the position of instances and the interconnections is called the physical design in VLSI Design.
 The workshop targets the day-wise step-upof the skills required for the physical design in VLSI System Design.
 <img width="325" alt="image_39b568fa-144a-4e00-834c-cd8cd70d24b420210129_151448" src="https://user-images.githubusercontent.com/25682001/106277463-2c533d80-625f-11eb-9bd9-4ce9d3989ff3.jpg">
+- [Heading](#Day-1)
+  * [Sub-heading](#SoC Design and Open-Source Tool Chain )
+    + [Sub-sub-heading](#Components of a SoC)
 ## Day-1
 ### SoC Design and Open-Source Tool Chain 
-#### Components of a SoC - 
+#### Components of a SoC 
 * The chip has the core where all the logic, Macros, Foundary IP's lies and pads for signal I/O and the total die after the floorplanning, placement, routing etc are completed. 
 * Interface between an application and actual hardware is brought in by the system software. 
 * However, the hardware understands only the binaries, and hence an abstract interface which starts with Intruction Set Architecture, then the RTL Description.
