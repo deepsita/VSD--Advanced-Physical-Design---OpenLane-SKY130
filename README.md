@@ -128,8 +128,8 @@ The Placement of the floor planned design can be done with the following command
 
     run_placement
     
-The overflow value needs to be converging to 0. And the placement cell legalization will be reported as in the below image
-<img width="300" alt="legality" src="https://user-images.githubusercontent.com/25682001/106281073-bd78e300-6264-11eb-9d26-18cac35fdb91.png">
+The overflow value needs to be converging to 0. And the placement cell legalization should be reported.
+
 ## Design and Charecterisation of Library cells
 ### Intro to Library Standard Cells
 * Standard Cells in the library can be ANDGate, Or gate, Buffer, DFF etc.
@@ -277,11 +277,27 @@ The CTS can be performed with the command
         
  The .def is utilised for PDN to continue
  ##Day 5
- 
+### PDN
+ After the post CTS STA analysis and timing closure, the power distribution network anfd final routing can be performed.
+ The PDN will create: 
+ * Ring to complete core
+ * Straps to bring power to the chip
+ * Power rails for standard cells
+ * Power halo to any preplaced cells.
+
+The command used for PDN is
+
+      gen_pdn
+      
+ The PDN should be performed on the final cts.def file as shown in the below image.
  
   <img width="500" alt="pdn" src= "https://user-images.githubusercontent.com/25682001/106294996-e5bd0d80-6275-11eb-8b5c-0f4586fb6201.png">
   
+  The completed PDN writes the database and the pitch value of metal1 shown in the image should be the height of the standard cells.
  <img width="500" alt="pdn_compl" src= "https://user-images.githubusercontent.com/25682001/106295001-e6ee3a80-6275-11eb-9fea-4a53030adb19.png">
- 
+### Routing
+Global routing is done inside the openroad itslef. The Titron-route does the detailed routing and the command as shown in image below.
   <img width="500" alt="route_cmd" src= "https://user-images.githubusercontent.com/25682001/106295018-ec4b8500-6275-11eb-8879-d36de51c4eca.png">
 
+### SPEF Extraction
+<img width="500" alt="spef" src= "https://user-images.githubusercontent.com/25682001/106350648-ae457400-62fc-11eb-8b76-7def596635ee.png">
