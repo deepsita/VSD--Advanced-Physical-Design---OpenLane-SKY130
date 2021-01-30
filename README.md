@@ -12,10 +12,11 @@ The workshop targets the day-wise step-upof the skills required for the physical
 
 
 # Contents
-[Purpose]()
-- [Day-1](#Day-1)
+- [Day-1](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#day-1)
 
-  * [SoC Design and Open-Source Tool Chain](#SoC Design and Open-Source Tool Chain)
+  * [Components of SoC](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#components-of-a-soc)
+
+  * [SoC Design and Open-Source Tool Chain](#https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#soC Design and Open-Source Tool Chain
   
    
   * [OpenLane - Basics and Synthesis](#OpenLane - Basics and Synthesis)
@@ -286,7 +287,9 @@ The steps to be performed are as below
 3. LEF file Preperation Steps: - This needs few more sub-steps  i.e.,i) Defining port ii) setting class ii)use attributes to each port.
 
 <img width="500" alt="9" src= "https://user-images.githubusercontent.com/25682001/106292480-dee0cb80-6272-11eb-8677-561af911bd7f.png">
+
 <img width="500" alt="10" src= "https://user-images.githubusercontent.com/25682001/106292496-e43e1600-6272-11eb-97b2-a96f233b6e1f.png>
+				
 <img width="500" alt="11" src= "https://user-images.githubusercontent.com/25682001/106292460-da1c1780-6272-11eb-983f-e04c4ba74c39.png">
 
 4. LEF file EXtraction. The command for LEF file extraction from the layout is
@@ -358,4 +361,4 @@ Global routing is done inside the openroad itslef. The Titron-route does the det
   <img width="500" alt="route_cmd" src= "https://user-images.githubusercontent.com/25682001/106295018-ec4b8500-6275-11eb-8879-d36de51c4eca.png">
 
 ### SPEF Extraction
-<img width="500" alt="spef" src= "https://user-images.githubusercontent.com/25682001/106350648-ae457400-62fc-11eb-8b76-7def596635ee.png">
+<img width="200" alt="spef" src= "https://user-images.githubusercontent.com/25682001/106350648-ae457400-62fc-11eb-8b76-7def596635ee.png">
