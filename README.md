@@ -328,9 +328,12 @@ Global routing is done inside the openroad itslef. The Titron-route does the det
   <img width="500" alt="route_cmd" src= "https://user-images.githubusercontent.com/25682001/106295018-ec4b8500-6275-11eb-8879-d36de51c4eca.png">
 
 ### SPEF Extraction
-After routing, the interconnect parasitics are extracted to sign-off post-route STA analysis and timing closure. These parasitics will be extracted into SPEF file. 
+After routing, the interconnect parasitics are extracted to sign-off post-route STA analysis and timing closure. These parasitics will be extracted into SPEF file.
+
 <img width="300" alt="spef" src= "https://user-images.githubusercontent.com/25682001/106350648-ae457400-62fc-11eb-8b76-7def596635ee.png">
 
+## Contact
+* [Skandha Deepsita S] (https://www.linkedin.com/in/skandha-deepsita-sarvepalli-027433ba/) 
 
 ## Acknowledgement
 * [Kunal Ghosh - Co-founder (VSD Corp. Pvt. Ltd)](https://github.com/kunalg123)
