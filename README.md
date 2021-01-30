@@ -260,13 +260,12 @@ The CTS can be performed with the command
  
  OpenLANE will generate a new .def fil after CTS. To view this, invoke the .def file with the Magic tool. 
  
- ![openroad_cmds_post_cts](https://user-images.githubusercontent.com/25682001/106294994-e5247700-6275-11eb-9646-c613e40b22b8.png)
- ![ppostcts_hold_slack](https://user-images.githubusercontent.com/25682001/106295013-eb1a5800-6275-11eb-986b-f52a61efe3bf.png)
- ![post_cts_slack](https://user-images.githubusercontent.com/25682001/106295005-e81f6780-6275-11eb-91b6-b0765fa7dc6e.png)
- ![ppostcts_hold_slack](https://user-images.githubusercontent.com/25682001/106295013-eb1a5800-6275-11eb-986b-f52a61efe3bf.png)
+ <img width="500" alt="openroad_cmds_post_cts" src= "https://user-images.githubusercontent.com/25682001/106294994-e5247700-6275-11eb-9646-c613e40b22b8.png">
+ <img width="500" alt= "post_cts_slack" src= "https://user-images.githubusercontent.com/25682001/106295005-e81f6780-6275-11eb-91b6-b0765fa7dc6e.png">
+ <img width="500" alt= "ppostcts_hold_slack" src=  https://user-images.githubusercontent.com/25682001/106295013-eb1a5800-6275-11eb-986b-f52a61efe3bf.png">
  
  The next steps to follow are 
- * INvoke the openroad tool with the command %openroad
+ * Invoke the openroad tool with the command %openroad
  * The lef and def files are to be read
  * .db file is to be created for further analysis
  
@@ -278,7 +277,7 @@ The CTS can be performed with the command
  ##Day 5
  
  
- ![pdn](https://user-images.githubusercontent.com/25682001/106294996-e5bd0d80-6275-11eb-8b5c-0f4586fb6201.png)
-![pdn_compl](https://user-images.githubusercontent.com/25682001/106295001-e6ee3a80-6275-11eb-9fea-4a53030adb19.png)
-  ![route_cmd](https://user-images.githubusercontent.com/25682001/106295018-ec4b8500-6275-11eb-8879-d36de51c4eca.png)
+  <img width="500" alt="pdn" src= "https://user-images.githubusercontent.com/25682001/106294996-e5bd0d80-6275-11eb-8b5c-0f4586fb6201.png">
+ <img width="500" alt="pdn_compl" src= " https://user-images.githubusercontent.com/25682001/106295001-e6ee3a80-6275-11eb-9fea-4a53030adb19.png">
+  <img width="500" alt="route_cmd" src= "https://user-images.githubusercontent.com/25682001/106295018-ec4b8500-6275-11eb-8879-d36de51c4eca.png">
 
