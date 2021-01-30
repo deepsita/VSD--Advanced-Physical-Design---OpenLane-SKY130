@@ -10,9 +10,9 @@ The 5-day workshop covers the open-source tool chain called openlane using the o
 The workshop targets the day-wise step-upof the skills required for the physical design in VLSI System Design.
 <img width="325" alt="image_39b568fa-144a-4e00-834c-cd8cd70d24b420210129_151448" src="https://user-images.githubusercontent.com/25682001/106277463-2c533d80-625f-11eb-9bd9-4ce9d3989ff3.jpg">
 
-<!-- toc -->
-# Contents
 
+# Contents
+[Purpose]()
 - [Day-1](#Day-1)
 
   * [SoC Design and Open-Source Tool Chain](#SoC Design and Open-Source Tool Chain)
