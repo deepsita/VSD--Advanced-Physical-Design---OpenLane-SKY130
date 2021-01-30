@@ -10,8 +10,8 @@ The workflow for automated RTL to GDSII using Sky-water PDK and open-source tool
    * [OpenLane - Basics and Synthesis](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#openlane---basics-and-synthesis)
     
  - [Day-2](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#day-2)
-  * [Chip Floorplanning](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#chip-floorplanning)
-  * [Design and Charecterisation of Library cells](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#design-and-charecterisation-of-library-cells)
+   * [Chip Floorplanning](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#chip-floorplanning)
+   * [Design and Charecterisation of Library cells](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#design-and-charecterisation-of-library-cells)
     	
 - [Day-3](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#day-3)
   * [CMOS Fabrication Process](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#cmos-fabrication-process)
