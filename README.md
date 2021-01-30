@@ -255,7 +255,7 @@ The steps to be performed are as below
 
 <img width="500" alt="9" src= "https://user-images.githubusercontent.com/25682001/106292480-dee0cb80-6272-11eb-8677-561af911bd7f.png">
 
-<img width="500" alt="10" src= "https://user-images.githubusercontent.com/25682001/106292496-e43e1600-6272-11eb-97b2-a96f233b6e1f.png>
+<img width="500" alt="10" src= "https://user-images.githubusercontent.com/25682001/106292496-e43e1600-6272-11eb-97b2-a96f233b6e1f.png">
 				
 <img width="500" alt="11" src= "https://user-images.githubusercontent.com/25682001/106292460-da1c1780-6272-11eb-983f-e04c4ba74c39.png">
 
@@ -333,7 +333,7 @@ After routing, the interconnect parasitics are extracted to sign-off post-route 
 <img width="300" alt="spef" src= "https://user-images.githubusercontent.com/25682001/106350648-ae457400-62fc-11eb-8b76-7def596635ee.png">
 
 ## Contact
-* [Skandha Deepsita S] (https://www.linkedin.com/in/skandha-deepsita-sarvepalli-027433ba/) 
+* [Skandha Deepsita S](https://www.linkedin.com/in/skandha-deepsita-sarvepalli-027433ba/) 
 
 ## Acknowledgement
 * [Kunal Ghosh - Co-founder (VSD Corp. Pvt. Ltd)](https://github.com/kunalg123)
