@@ -15,44 +15,18 @@ The workshop targets the day-wise step-upof the skills required for the physical
 
   * [SoC Design and Open-Source Tool Chain ](#SoC Design and Open-Source Tool Chain)
   
-    + [Components of a SoC](#Components of a SoC)
-    
-    + [ASIC Design Flow](#ASIC Design Flow)
-    
-    + [Open-Source tools for chip design - OpenLane Tool Chain](#Open-Source tools for chip design - OpenLane Tool Chain)
-    
-    + [Open-Source PDK for chip design](#Open-Source PDK for chip design)
-    
-    + [Final Steps](#Final Steps)
-    
+   
   * [OpenLane - Basics and Synthesis](#OpenLane - Basics and Synthesis)
   
-    + [The OpenLane Directory Structure](#The OpenLane Directory Structure)
-    
-    + [RTL Synthesis](#Synthesis of RTL)
-    
+   
  - [Day-2](#Day-2)
 
   * [Chip Floorplanning](#Chip Floorplanning)
   
-    + [Height and width of core](#Height and width of core)
-	
-    + [Pre-placed Cells](#Pre-placed Cells)
-	
-    + [Decoupling Capacitors](#Decoupling Capacitors)
-	
-    + [Power Planning](#Power Planning)
-	
-    + [Placement and Routing](#Placement and Routing)
 	
   * [Design and Charecterisation of Library cells](#Design and Charecterisation of Library cells)
   
-    + [Cell design flow](#Cell design flow)
-	
-    + [Charecterisation ](#Flow of Charecterisation)
-	
-    + [Timing Charecterisation](#Timing Charecterisation)
-    
+  
 	
 - [Day-3](#Day-3)
 
@@ -60,17 +34,16 @@ The workshop targets the day-wise step-upof the skills required for the physical
   
   * [SPICE Simulations](#SPICE Simulations)  
   
+  
+  
 - [Day-4](#Day-4) 
 
   * [Insertion of Custom Cell in the reference design](#Insertion of Custom Cell in the reference design)
   
   * [Synthesis](#Synthesis)
-  
-	+ Fixing TIming violations
 	
   * [CTS](#CTS) 
   
-	+ Write .db file from LEF and DEF
   
 - [Day-5](#Day-5) 
 
@@ -80,7 +53,6 @@ The workshop targets the day-wise step-upof the skills required for the physical
   
   * [SPEF Extraction](#SPEF Extraction) 
 
-  
   
 
   
