@@ -9,11 +9,13 @@ The workflow for automated RTL to GDSII using Sky-water PDK and open-source tool
 The 5-day workshop covers the open-source tool chain called openlane using the open-source sky-water pdk for each step in RTL-GDSII. The transformation of circuit description into physical layout which describes the position of instances and the interconnections is called the physical design in VLSI Design.
 The workshop targets the day-wise step-upof the skills required for the physical design in VLSI System Design.
 <img width="325" alt="image_39b568fa-144a-4e00-834c-cd8cd70d24b420210129_151448" src="https://user-images.githubusercontent.com/25682001/106277463-2c533d80-625f-11eb-9bd9-4ce9d3989ff3.jpg">
-#Contents
+
+
+# Contents
 
 - [Day-1](#Day-1)
 
-  * [SoC Design and Open-Source Tool Chain ](#SoC Design and Open-Source Tool Chain)
+  * [SoC Design and Open-Source Tool Chain](#SoC Design and Open-Source Tool Chain)
   
    
   * [OpenLane - Basics and Synthesis](#OpenLane - Basics and Synthesis)
@@ -21,16 +23,17 @@ The workshop targets the day-wise step-upof the skills required for the physical
    
  - [Day-2](#Day-2)
 
+
   * [Chip Floorplanning](#Chip Floorplanning)
   
 	
   * [Design and Charecterisation of Library cells](#Design and Charecterisation of Library cells)
   
-  
-	
+  	
 - [Day-3](#Day-3)
 
   * [CMOS Fabrication Process](#CMOS Fabrication Process)
+  
   
   * [SPICE Simulations](#SPICE Simulations)  
   
@@ -41,7 +44,9 @@ The workshop targets the day-wise step-upof the skills required for the physical
 
   * [Insertion of Custom Cell in the reference design](#Insertion of Custom Cell in the reference design)
   
+  
   * [Synthesis](#Synthesis)
+	
 	
   * [CTS](#CTS) 
   
@@ -49,6 +54,7 @@ The workshop targets the day-wise step-upof the skills required for the physical
 - [Day-5](#Day-5) 
 
   * [Power Distribution](#PDN) 
+  
   
   * [Routing](#Routing) 
   
