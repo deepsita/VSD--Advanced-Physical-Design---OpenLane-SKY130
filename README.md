@@ -14,53 +14,47 @@ The workshop targets the day-wise step-upof the skills required for the physical
 # Contents
 - [Day-1](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#day-1)
 
-  * [Components of SoC](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#components-of-a-soc)
-
-  * [SoC Design and Open-Source Tool Chain](#https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#soC Design and Open-Source Tool Chain
+   * [SoC Design and Open-Source Tool Chain](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#soc-design-and-open-source-tool-chain)
+   
+  * [OpenLane - Basics and Synthesis](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#openlane---basics-and-synthesis
   
    
-  * [OpenLane - Basics and Synthesis](#OpenLane - Basics and Synthesis)
-  
-   
- - [Day-2](#Day-2)
+ - [Day-2](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#day-2)
 
-
-  * [Chip Floorplanning](#Chip Floorplanning)
-  
-	
-  * [Design and Charecterisation of Library cells](#Design and Charecterisation of Library cells)
-  
+  * [Chip Floorplanning](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#chip-floorplanning)
   	
-- [Day-3](#Day-3)
+  * [Design and Charecterisation of Library cells](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#design-and-charecterisation-of-library-cells)
+    	
+- [Day-3](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#day-3)
 
-  * [CMOS Fabrication Process](#CMOS Fabrication Process)
+  * [CMOS Fabrication Process](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#cmos-fabrication-process)
   
   
-  * [SPICE Simulations](#SPICE Simulations)  
+  * [SPICE Simulations](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#spice-simulations)  
   
   
   
-- [Day-4](#Day-4) 
+- [Day-4](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#day-4) 
 
 
-  * [Insertion of Custom Cell in the reference design](#Insertion of Custom Cell in the reference design)
+  * [Insertion of Custom Cell in the reference design](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#insertion-of-custom-cell-in-the-reference-design)
   
   
-  * [Synthesis](#Synthesis)
+  * [Synthesis](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#synthesis)
 	
 	
-  * [CTS](#CTS) 
+  * [CTS](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#cts) 
   
   
-- [Day-5](#Day-5) 
+- [Day-5](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#day-5) 
 
-  * [Power Distribution](#PDN) 
+  * [Power Distribution](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#pdn) 
   
   
-  * [Routing](#Routing) 
+  * [Routing](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#routing) 
   
   
-  * [SPEF Extraction](#SPEF Extraction) 
+  * [SPEF Extraction](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#spef-extraction) 
 
   
 
