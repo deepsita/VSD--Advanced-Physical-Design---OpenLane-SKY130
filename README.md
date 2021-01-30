@@ -4,62 +4,34 @@ The workflow for automated RTL to GDSII using Sky-water PDK and open-source tool
   ### Aim - Learn - Assess - Practice - Bridge the gap - Industry Ready
   The workshop is hosted on virtual learning platform called Intelligent Assesment Technology which unlocks the potential of everyone. The course is designed to bring up a solution in bridging the gap of theoretical concepts and practical experience.
 
-
-## Introduction
-The 5-day workshop covers the open-source tool chain called openlane using the open-source sky-water pdk for each step in RTL-GDSII. The transformation of circuit description into physical layout which describes the position of instances and the interconnections is called the physical design in VLSI Design.
-The workshop targets the day-wise step-upof the skills required for the physical design in VLSI System Design.
-<img width="325" alt="image_39b568fa-144a-4e00-834c-cd8cd70d24b420210129_151448" src="https://user-images.githubusercontent.com/25682001/106277463-2c533d80-625f-11eb-9bd9-4ce9d3989ff3.jpg">
-
-
 # Contents
 - [Day-1](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#day-1)
-
    * [SoC Design and Open-Source Tool Chain](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#soc-design-and-open-source-tool-chain)
-   
-  * [OpenLane - Basics and Synthesis](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#openlane---basics-and-synthesis
-  
-   
+   * [OpenLane - Basics and Synthesis](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#openlane---basics-and-synthesis)
+    
  - [Day-2](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#day-2)
-
   * [Chip Floorplanning](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#chip-floorplanning)
-  	
   * [Design and Charecterisation of Library cells](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#design-and-charecterisation-of-library-cells)
     	
 - [Day-3](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#day-3)
-
   * [CMOS Fabrication Process](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#cmos-fabrication-process)
-  
-  
   * [SPICE Simulations](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#spice-simulations)  
-  
-  
-  
 - [Day-4](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#day-4) 
-
-
   * [Insertion of Custom Cell in the reference design](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#insertion-of-custom-cell-in-the-reference-design)
-  
-  
   * [Synthesis](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#synthesis)
-	
-	
   * [CTS](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#cts) 
-  
-  
-- [Day-5](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#day-5) 
 
+- [Day-5](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#day-5) 
   * [Power Distribution](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#pdn) 
-  
-  
   * [Routing](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#routing) 
-  
-  
   * [SPEF Extraction](https://github.com/deepsita/VSD--Advanced-Physical-Design---OpenLane-SKY130/blob/main/README.md#spef-extraction) 
 
-  
 
-  
-  
+## Introduction
+The 5-day workshop covers the open-source tool chain called openlane using the open-source sky-water pdk for each step in RTL-GDSII. The transformation of circuit description into physical layout which describes the position of instances and the interconnections is called the physical design in VLSI Design.
+The workshop targets the day-wise step-up of the skills required for the physical design in VLSI System Design.
+<img width="325" alt="image_39b568fa-144a-4e00-834c-cd8cd70d24b420210129_151448" src="https://user-images.githubusercontent.com/25682001/106277463-2c533d80-625f-11eb-9bd9-4ce9d3989ff3.jpg">
+
 ## Day-1
 ### SoC Design and Open-Source Tool Chain 
 #### Components of a SoC 
@@ -356,3 +328,11 @@ Global routing is done inside the openroad itslef. The Titron-route does the det
 
 ### SPEF Extraction
 <img width="200" alt="spef" src= "https://user-images.githubusercontent.com/25682001/106350648-ae457400-62fc-11eb-8b76-7def596635ee.png">
+
+
+## Acknowledgement
+* [Kunal Ghosh - Co-founder (VSD Corp. Pvt. Ltd)](https://github.com/kunalg123)
+* [Nickson Jose - VSD VLSI Engineer](https://github.com/nickson-jose)
+
+
+
