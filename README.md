@@ -9,9 +9,51 @@ The workflow for automated RTL to GDSII using Sky-water PDK and open-source tool
 The 5-day workshop covers the open-source tool chain called openlane using the open-source sky-water pdk for each step in RTL-GDSII. The transformation of circuit description into physical layout which describes the position of instances and the interconnections is called the physical design in VLSI Design.
 The workshop targets the day-wise step-upof the skills required for the physical design in VLSI System Design.
 <img width="325" alt="image_39b568fa-144a-4e00-834c-cd8cd70d24b420210129_151448" src="https://user-images.githubusercontent.com/25682001/106277463-2c533d80-625f-11eb-9bd9-4ce9d3989ff3.jpg">
-- [Heading](#Day-1)
-  * [Sub-heading](#SoC Design and Open-Source Tool Chain )
-    + [Sub-sub-heading](#Components of a SoC)
+#Contents
+
+- [Day-1](#Day-1)
+  * [SoC Design and Open-Source Tool Chain ](#SoC Design and Open-Source Tool Chain)
+    + [Components of a SoC](#Components of a SoC)
+    + [ASIC Design Flow](#ASIC Design Flow)
+    + [Open-Source tools for chip design - OpenLane Tool Chain](#Open-Source tools for chip design - OpenLane Tool Chain)
+    + [Open-Source PDK for chip design](#Open-Source PDK for chip design)
+    + [Final Steps](#Final Steps)
+  * [OpenLane - Basics and Synthesis](#OpenLane - Basics and Synthesis)
+    + [The OpenLane Directory Structure](#The OpenLane Directory Structure)
+    + [RTL Synthesis](#Synthesis of RTL)
+    
+ - [Day-2](#Day-2)
+  * [Chip Floorplanning](#Chip Floorplanning)
+    + [Height and width of core](#Height and width of core)
+    + [Pre-placed Cells](#Pre-placed Cells)
+    + [Decoupling Capacitors](#Decoupling Capacitors)
+    + [Power Planning](#Power Planning)
+    + [Placement and Routing](#Placement and Routing)
+  * [Design and Charecterisation of Library cells](#Design and Charecterisation of Library cells)
+    + [Cell design flow](#Cell design flow)
+    + [Charecterisation ](#Flow of Charecterisation )
+    + [Timing Charecterisation](#Timing Charecterisation)
+    
+	
+- [Day-3](#Day-3)
+  * [CMOS Fabrication Process](#CMOS Fabrication Process)
+  * [SPICE Simulations](#SPICE Simulations)  
+  
+- [Day-4](#Day-4) 
+  * [Insertion of Custom Cell in the reference design](#Insertion of Custom Cell in the reference design) 
+  * [Synthesis](#Synthesis)
+	+ Fixing TIming violations
+	
+  * [CTS](#CTS) 
+	+ Write .db file from LEF and DEF
+  
+- [Day-5](#Day-5) 
+  * [Power Distribution](#PDN) 
+  * [Routing](#Routing) 
+  * [SPEF Extraction](#SPEF Extraction) 
+
+  
+  
 ## Day-1
 ### SoC Design and Open-Source Tool Chain 
 #### Components of a SoC 
@@ -85,7 +127,7 @@ The synthesis result can be utilised tocount the Buffer Ratio, FLop Ratio etc. T
 <img width="500" alt="Screenshot (448)" src="https://user-images.githubusercontent.com/25682001/106053808-39faad00-6111-11eb-87ad-b800645ec6e2.png"> 
 
 ## Day-2
-## Chip Floorplanning and Standard Cells
+## Chip Floorplanning
 ### Height and width of core
 * Core is the section of chip where the fundamental logic is placed
 * Die consists of core and it is a ssemiconductor material on which the circuit is fabricated.
@@ -249,7 +291,7 @@ The steps to be performed are as below
         set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]
         set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
         add_lefs -src $lefs
-        
+### Synthesis        
 Now, repeat the openlane flow steps i.e, synthesis, floorplan and placement.
 Any slack violations can be rectified by one or more of following mechanisms
 * SYNTH_STRATEGY checking
@@ -279,7 +321,9 @@ The CTS can be performed with the command
         write_db post_cts.db
         
  The .def is utilised for PDN to continue
- ##Day 5
+
+## Day 5
+
 ### PDN
  After the post CTS STA analysis and timing closure, the power distribution network anfd final routing can be performed.
  The PDN will create: 
